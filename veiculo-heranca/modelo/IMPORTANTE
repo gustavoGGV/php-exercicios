@@ -1,1 +1,0 @@
-Não se pode usar herança multipla, ou seja, Filho 1 pode herdar Pai, mas Filho 2 não pode herdar Filho 1, e sim Pai.
