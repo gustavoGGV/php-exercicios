@@ -129,8 +129,6 @@ do {
 
             echo "\nMago criado!\n";
 
-            print_r($magos);
-
             break;
 
         case 2:
