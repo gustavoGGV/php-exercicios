@@ -12,7 +12,7 @@ class Curandeiro extends Mago {
         $poder=$this->getPoder();
         $forcaTotal=$poder->getForcaTotal($this->forcaDeCura);
 
-        return "O mago " . $this->nome . "do tipo curandeiro, possui força de " . $this->forcaDeCura . " e lançou o poder '" . $poder->getDescricao() . "' com força total de " . $forcaTotal . ".\n";
+        return "O mago " . $this->nome . " do tipo curandeiro, possui força de " . $this->forcaDeCura . " e lançou o poder '" . $poder->getDescricao() . "' com força total de " . $forcaTotal . ".\n";
 
     }
 
