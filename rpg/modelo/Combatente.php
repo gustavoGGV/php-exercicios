@@ -11,7 +11,7 @@ class Combatente extends Mago {
         $poder=$this->getPoder();
         $forcaTotal=$poder->getForcaTotal($this->forcaDeAtaque);
 
-        return "O mago " . $this->nome . "do tipo combatente, possui força de " . $this->forcaDeAtaque . " e lançou o poder '" . $poder->getDescricao() . "' com força total de " . $forcaTotal . ".\n";
+        return "O mago " . $this->nome . " do tipo combatente, possui força de " . $this->forcaDeAtaque . " e lançou o poder '" . $poder->getDescricao() . "' com força total de " . $forcaTotal . ".\n";
 
     }
 
