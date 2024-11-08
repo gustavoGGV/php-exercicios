@@ -8,7 +8,7 @@ class PontoTuristico extends Espaco {
 
     public function getDadosPontoTuristico() {
 
-        return "\nNome do restaurante: " . $this->nome . "\nEndereço do restaurante: " . $this->endereco . "\nDuração da visita: " . $this->duracaoDaVisita . " dias";
+        return "\nNome do ponto turístico: " . $this->nome . "\nEndereço do ponto turístico: " . $this->endereco . "\nDuração da visita: " . $this->duracaoDaVisita . " dias";
 
     }
 
