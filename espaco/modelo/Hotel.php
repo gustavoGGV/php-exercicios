@@ -19,6 +19,8 @@ class Hotel extends Espaco {
 
         }
 
+        // Por algum motivo o ternário não funcionou. Chamando a função no pograma principal, apenas o ternário era retornado, ignorando todo o resto da string.
+
     }
 
     /**
