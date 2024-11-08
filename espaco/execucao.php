@@ -105,7 +105,6 @@ do {
 
             } while($j=1);
 
-            print_r($espacos);
             break;
 
         case 2:
@@ -114,33 +113,62 @@ do {
 
                 if($e instanceof Hotel) {
 
-                    echo $k . " -";
-                    echo "\n" . $e->getDadosHotel();
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosHotel() . "\n\n";
                     $k++;
 
-                } if($e instanceof Restaurante) {
+                } else if($e instanceof Restaurante) {
 
-                    echo $k . " -";
-                    echo "\n" . $e->getDadosRestaurante();
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosRestaurante() . "\n\n";
                     $k++;
 
-                } if($e instanceof PontoTuristico) {
+                } else if($e instanceof PontoTuristico) {
 
-                    echo $k . " -";
-                    echo "\n" . $e->getDadosPontoTuristico();
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosPontoTuristico() . "\n\n";
                     $k++;
 
                 }
 
-                echo "\n";
-                $opcaoDeletar=readline("Que espaço você deseja deletar?: ");
-                $opcaoDeletar--;
-                array_splice($espacos, $opcaoDeletar);
+            }
 
-                print_r($espacos);
-                break;
+            echo "\n";
+            $opcaoDeletar=readline("Que espaço você deseja deletar?: ");
+            $opcaoDeletar--;
+            array_splice($espacos, $opcaoDeletar, 1);
+            
+            break;
+
+        case 3:
+
+            $k=1;
+            foreach($espacos as $e) {
+
+                if($e instanceof Hotel) {
+
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosHotel() . "\n\n";
+                    $k++;
+
+                } else if($e instanceof Restaurante) {
+
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosRestaurante() . "\n\n";
+                    $k++;
+
+                } else if($e instanceof PontoTuristico) {
+
+                    echo "\n" . $k . " -";
+                    echo $e->getDadosPontoTuristico() . "\n\n";
+                    $k++;
+
+                }
 
             }
+
+            break;
+
     }
 
 } while($opcao!=0);
